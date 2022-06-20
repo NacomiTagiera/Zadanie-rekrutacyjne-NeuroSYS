@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mnie</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+  <main id="main">
+
+    <article class="start">      
+
+      <header>
+
+        <nav>
+
+          <ul>
+
+            <li><a href="../Strona startowa/index.html">Start</a></li>
+            <li id="active">O mnie</li>
+            <li><a href="#" id="kontakt">Kontakt</a></li>
+
+          </ul>
+
+        </nav>        
+
+      </header> 
+      
+      <section class="description">
+
+        <header>
+          <h2>Kim jestem?</h2>
+        </header>   
+
+        <p>Jestem Adele, a właściwie Adele Laurie Blue Adkins, mam 34 lata i pochodzę z Londynu. Zaczęłam śpiewać w wieku czterech lat, kiedy to zafascynowałam się brzmieniem różnych głosów. Lubiłam słuchać, jak tony głosu zmieniają się od gniewnych do podnieconych, czy od radosnych do smutnych. W dzieciństwie częściej śpiewałam, niż czytałam. Pierwszym koncertem, na który zabrała mnie moja mama, był występ zespołu The Cure w Funsbury Park. Kilka lat później umieściłam jedną z ich piosenek, „Lovesong”, na swojej drugiej płycie zatytułowanej 21. Jako pięciolatka zaczęłam występować na przyjęciach wydawanych przez moją matkę. W 1997, mając 9 lat, przeprowadziłam się z nią do Brighton. Dwa lata później obie przeniosłyśmy się do West Norwood, które okazało się inspiracją do mojego utworu „Hometown Glory”. <br>
+        Jednym z najbardziej decydujących w moim życiu momentów był występ piosenkarki Pink w Brixton Academy: To była piosenka „Missundaztood”, więc miałam jakieś 13 albo 14 lat. Nigdy nie słyszałam w pomieszczeniu kogoś, kto tak śpiewa. Pamiętam to uczucie, jakbym była w tunelu aerodynamicznym, jej głos po prostu mnie uderzył. To było niesamowite. Duży wpływ na moje zauroczenie muzyką oraz późniejszą twórczość mieli także artyści, tacy jak zespół The Beautiful South, East 17, Gabrielle, Spice Girls, Tom Jones, Etta James czy Ella Fitzgerald. W 2003 zostałam przyjęta do Brytyjskiej Szkoły Sztuki Widowiskowej i Technologii. Ukończyłam naukę w szkole w maju 2006, a po ukończeniu szkoły planowałam zostać szefem działu artystycznego (tzw. A&R) w wytwórni muzycznej.</p> 
+
+        <header>
+          <h3>Ciekawostki</h3>
+        </header>
+
+        <p>W czasie amerykańskiej trasy koncertowej straciłam głos. Powodem były infekcja gardła i ogólne zmęczenie. Wkrótce rozpoznano krwotok ze strun głosowych i nakazano milczenie przez miesiąc. Przeszłam zabieg chirurgiczny w Massachusetts. <br><br>
+        Zostałam pierwszym żyjącym artystą od czasów The Beatles, którego dwa kolejne albumy i single znalazły się w pierwszej piątce notowań brytyjskiego rynku muzycznego. <br><br>
+        Zdobyłam aż <strong>15 nagród Grammy</strong>, co czyni mnie czwartą najbardziej utalentowaną artystką.
+        </p>
+        
+      </section>
+
+      <section class="slider-container">
+
+        <header>
+          <h2>Galeria zdjęć</h2>
+        </header>   
+        
+        <img src="img/slajdy/slajd1.jpg" alt="" class="photo">
+        <img src="img/slajdy/slajd2.webp" alt="" class="photo">
+        <img src="img/slajdy/slajd3.jpg" alt="" class="photo">
+        <img src="img/slajdy/slajd4.jpg" alt="" class="photo">
+        <img src="img/slajdy/slajd5.jpg" alt="" class="photo">        
+        
+      </section>
+
+      <div id="border"></div>      
+
+    </article>
+
+
+    <article class="music">
+      
+      <header>
+        <h2>Moje piosenki i nagrody</h2>
+      </header>
+
+      <p>W swojej karierze zdobyłam dotychczas 73 nagrody, w tym 15 nagród Grammy, nagrodę Akademii Filmowej, 24 Brit Awards i 1 Złoty Glob. Moje piosenki na YouTube mają już ponad <strong>12 miliardów wyświtleń.</strong></p>   
+
+      <section id="songs">
+
+        <p>
+          <strong>Aby odsłuchać piosenkę, kliknij na jej tytuł.</strong>
+        </p>
+  
+        <audio id="Rolling-in-the-Deep" src="../music/Rolling-in-the-Deep.mp3"></audio>
+        <audio id="Send-My-Love" src="../music/Send-My-Love.mp3"></audio>
+        <audio id="Someone-Like-You" src="../music/Someone-Like-You.mp3"></audio>   
+        <audio id="Set-Fire-To-The-Rain" src="../music/Set-Fire-To-The-Rain.mp3"></audio>   
+  
+        <div id="buttons"></div>
+
+      </section>
+      
+
+    </article>
+
+  </main>  
+
+  <section class="form-container">
+
+    <i class="fa-solid fa-times-circle fa-2x"></i>
+
+    <h1>Napisz do mnie</h1>    
+
+    <form name="kontakt">
+
+      <i class="far fa-comment fa-6x" id="gray-comment"></i>
+      <i class="far fa-comment fa-6x" id="dark-comment"></i>
+
+      <div class="form-control">
+
+        <input name="imie" type="text" minlength="3" required>
+        <label id="imie">Imię</label>
+
+      </div>
+
+      <div class="form-control">
+
+        <input name="nazwisko" type="text" minlength="2" required>
+        <label id="nazwisko">Nazwisko</label>
+
+      </div>
+      
+      <div class="form-control">
+
+        <input name="email" type="email" required>
+        <label id="mail">E-mail</label>
+
+      </div>
+
+      <div class="form-control">
+
+        <input name="tel" type="tel" pattern="[0-9]{9}" required>
+        <label id="telefon">Telefon (tylko cyfry)</label>
+
+      </div>
+
+      <div class="form-control">
+
+        <label id="message-label">Twoja wiadomość</label>
+        <textarea id="message" placeholder="Treść wiadomości..." rows="10"></textarea>
+
+      </div>
+
+      <button id="send">Wyślij</button>      
+
+    </form> 
+
+    <div class="container hide">
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid"></div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    Adele Laurie Blue Adkins 2022 &copy; Wszelkie prawa zastrzeżone
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="../contact.js"></script>
+</body>
+</html>
