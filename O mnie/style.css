@@ -1,0 +1,227 @@
+@import url('../common_style.css');
+@import url('../form.css');
+
+/* Sekcja 1 */
+
+.start
+{
+    height: 100vh;
+    background-image: url('img/tło.jpg');
+    background-position: center;
+    background-size: cover;   
+    position: relative;    
+}
+
+h2
+{
+    text-align: center;
+    font-size: 32px;
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    padding: 0;
+}
+
+h3
+{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/* Slajder */
+
+
+.slider-container
+{
+    position: absolute;
+    width: 40%;    
+    right: 8%;
+    top: 15%;
+}
+
+.photo
+{   
+    position: absolute;  
+    width: 100%;
+    height: auto;
+    transition: opacity .5s ease-in;
+}
+
+.photo + .photo
+{
+    opacity: 0;
+}
+
+/* Koniec slajdera */
+
+
+/* Opis */
+
+.description
+{
+    position: absolute;
+    width: 40%;
+    left: 8%;
+    top: 12%;
+
+    animation: article-load 300ms ease-in calc(var(--article-load-delay) + 200ms);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+/* Koniec Opisu */
+
+
+/* Linia między sekcjami */
+
+#border
+{
+    background-color: black;
+    height: 80%;
+    width: 1px;
+    margin-top: 30px;
+    
+    position: absolute;
+    right: 50%;
+}
+
+/* Koniec linii między sekcjami */
+
+
+/* Koniec Sekcji 1 */
+
+
+/* Sekcja 2 */
+
+.music
+{
+    min-height: 100vh;
+    background-image: url('img/nagrody.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;      
+}
+
+.music header h2
+{
+    margin: 0;
+    padding-top: 40px;
+}
+
+.music p
+{
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding: 10px 25px;
+    text-align: center;
+
+}
+
+#songs
+{
+    margin-top: 75px;
+}
+
+#songs p 
+{
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+#buttons
+{
+    display: flex;
+    justify-content: space-around;    
+    text-align: center;
+}
+
+.musicBtn
+{
+    background-color: blueviolet;    
+    margin: 20px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    max-width: fit-content;
+    border: none;
+    position: relative;
+}
+
+.musicBtn:hover
+{
+    background-color: rgb(114, 14, 207);
+    cursor: pointer;    
+}
+
+.musicBtn::after
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background-color: lightgray;
+    opacity: .8;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;    
+    border: none;
+    width: calc(100% - 12px);
+    text-align: left;
+    padding: 6px;
+    z-index: 1;
+    transform: translateY(100%);
+}
+
+.musicBtn.hidden::after
+{
+    display: none;
+}
+
+.musicBtn.playing
+{
+    background-color: rgb(114, 14, 207);
+}
+
+.musicBtn.Someone-Like-You::after
+{
+    content: 'Piosenka opowiada historię zakończonego związku artystki. Niejako rozprawia się tam ze swoją przeszłością, z byłą miłością. W początkowej części utworu zwraca się bezpośrednio do mężczyzny, z którą kiedyś łączyło ją uczucie. Pyta co dzieje się w jego życiu, wspomina o jego nowym życiu, żonie i szczęściu.';
+}
+
+.musicBtn.Set-Fire-To-The-Rain::after
+{
+    content: 'W tym utworze Adele snuje opowieść o związku zbliżającym się ku końcowi. Widzimy tutaj klasyczną historię dziewczyny oszukanej pięknymi kłamstwami wypowiadanymi przez chłopaka, w którym jest zakochana.';
+}
+
+.musicBtn.Send-My-Love::after
+{
+    content: 'Kiedy emocje towarzyszące przy rozstaniu opadają, wokalistka otwiera się na nową miłość. Podczas refrenu wysyła uczucie i błogosławieństwo względem jej nowego związku. Tym razem ma nadzieję na trwałą relację. Bez miłości jej życie jest puste, dlatego bardzo potrzebuje tego uczucia.';
+}
+
+.musicBtn.Rolling-in-the-Deep::after
+{
+    content: 'Autorka pokazuje tutaj swoją siłę, buntuje się przeciwko złemu traktowaniu. Zamiast błagać mężczyznę, żeby z nią został za wszelką cenę, odcina się od toksycznej relacji i pozbywa uciążliwego kochanka. Adele ostrzega go, że zaczął doceniać jej siłę i że powinien zacząć się bać jej zemsty. Ewidentnie mamy tu do czynienia ze złością skrzywdzonej kobiety, która nie godzi się już na złe traktowanie i postanawia wziąć sprawy w swoje ręce.';
+}
+
+/* Koniec sekcji 2 */
+
+
+/* Stopka */
+
+footer
+{
+    padding: 20px;
+    color: white;
+    background-color: #303030;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* Koniec stopki */
