@@ -1,0 +1,31 @@
+@import url('../common_style.css');
+@import url('../form.css');
+
+body
+{
+    background-image: url('../img/adele.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#main header h1
+{
+    font-size: 180px;
+    font-family: 'Aclonica';
+    font-weight: 800;
+
+    background: -webkit-linear-gradient(red, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;        
+
+    animation: article-load 300ms ease-in calc(var(--article-load-delay) + 200ms);
+    animation-fill-mode: forwards;    
+    opacity: 0;    
+
+    text-align: center;
+    margin-top: 500px;
+}
