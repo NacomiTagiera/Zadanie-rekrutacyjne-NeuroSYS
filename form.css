@@ -1,0 +1,231 @@
+/* Formularz kontaktowy */
+
+.form-container
+{
+    z-index: 1;        
+    background-image: url('img/tlo_formularza.webp');
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 50vw;
+    transition: right 1s ease-in-out;    
+}
+
+.form-container.show
+{    
+    right: 0;
+    transition: right 1s ease-in-out;    
+}
+
+.fa-times-circle
+{
+    margin: 10px 0 0 10px;
+    color: black;
+    transition: all .4s linear;
+}
+
+.fa-times-circle:hover
+{
+    color: gray;
+    cursor: pointer;
+    transform: scale(.9);
+    transition: all .4s linear;
+}
+
+form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.fa-comment
+{
+    position: absolute;
+    opacity: .4;
+}
+
+#gray-comment
+{    
+    color: gray;
+    right: 15%;
+    top: 0;    
+    transform: rotateY(180deg);
+}
+
+#dark-comment
+{
+    color: darkgray;
+    right: 12%;
+    top: -5%;
+}
+
+.form-container h1
+{
+    text-align: center;
+    padding: 22px 0;    
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.form-control
+{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 30%;
+}
+
+.form-control input
+{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid darkgray;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: darkblue;
+}
+
+.form-control input:focus, 
+.form-control input:valid
+{
+    outline: 0;
+    border-bottom-color: blue;
+}
+
+#message
+{
+    width: 100%;
+}
+
+#send
+{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    width: 100%;    
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 10px;  
+    transition: all .5s ease-in-out;
+}
+
+#send:hover
+{
+    transform: scale(.95);
+    background-color: lightblue;
+    color: black;
+}
+
+#send:focus
+{
+    outline: 0;
+}
+
+.form-control label
+{
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+#message-label
+{
+    top: -25px;
+}
+
+.form-control label span 
+{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span, 
+.form-control input:valid + label span 
+{
+    color: rgb(182, 88, 169);   
+    transform: translateY(-30px); 
+}
+
+/* Czy jesteś robotem? */
+
+:root 
+{
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+.container 
+{
+    position: fixed;
+    top: 50%;
+    width: 49vw;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    z-index: 10;
+}
+  
+.btn-grid 
+{
+    display: grid;
+    grid-template-columns: 1;
+    gap: 10px;
+    margin: 20px 0;
+}
+  
+.btn 
+{
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+ }
+  
+.btn:hover 
+{
+    border-color: black;
+}
+  
+.btn.correct 
+{
+    --hue: var(--hue-correct);
+    color: black;  
+}
+  
+.btn.wrong 
+{
+    --hue: var(--hue-wrong);
+}
+  
+.start-btn
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+  
+.controls 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.hide 
+{
+    display: none;
+}
