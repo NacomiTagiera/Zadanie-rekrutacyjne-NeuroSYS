@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adele</title>
+
+    <link rel="stylesheet" href="style.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <main id="main">
+
+      <header>
+
+        <nav>
+
+          <ul>
+
+            <li id="active">Start</li>
+            <li><a href="../O mnie/index.html">O mnie</a></li>
+            <li><a href="#" id="kontakt">Kontakt</a></li>
+
+          </ul>
+
+        </nav>
+
+        <h1>Adele</h1>
+
+    </header> 
+
+    </main> 
+
+    <section class="form-container">
+
+      <i class="fa-solid fa-times-circle fa-2x"></i>
+  
+      <h1>Napisz do mnie</h1>    
+  
+      <form>
+  
+        <i class="far fa-comment fa-6x" id="gray-comment"></i>
+        <i class="far fa-comment fa-6x" id="dark-comment"></i>
+  
+        <div class="form-control">
+  
+          <input type="text" minlength="3" required>
+          <label>Imię</label>
+  
+        </div>
+  
+        <div class="form-control">
+  
+          <input type="text" minlength="2" required>
+          <label>Nazwisko</label>
+  
+        </div>
+        
+        <div class="form-control">
+  
+          <input type="email" required>
+          <label>E-mail</label>
+  
+        </div>
+  
+        <div class="form-control">
+  
+          <input type="tel" pattern="[0-9]{9}" required>
+          <label>Telefon (tylko cyfry)</label>
+  
+        </div>
+  
+        <div class="form-control">
+  
+          <label id="message-label">Twoja wiadomość</label>
+          <textarea id="message" placeholder="Treść wiadomości..." rows="10"></textarea>
+  
+        </div>
+  
+        <input type="submit" class="btn" value="Wyślij">        
+  
+      </form>
+  
+    </section>
+    
+    <script src="../contact.js"></script>
+</body>
+</html>
