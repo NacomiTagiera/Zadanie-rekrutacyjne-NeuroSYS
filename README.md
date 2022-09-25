@@ -1,6 +1,8 @@
 # Zadanie rekrutacyjne - praktyki front-end
 Treść zadania: 
 
+Cel: Stworzenie wizytówki dla dowolnej gwiazdy muzycznej :)
+
 Opis: Do stworzenia strony internetowej powinny zostać użyte technologie takie jak: 
 - HTML5,
 - CSS3,
@@ -17,7 +19,9 @@ Cały formularz powinien być ukryty po załadowaniu strony i wysuwany po klikni
 
 Na stronie mile widziane będą zdjęcia oraz osadzony film z serwisu Youtube lub Vimeo. 
 
-W zadaniu oprócz estetyki i animacji, będzie oceniane również wykorzystanie możliwości jakie dają JS i CSS oraz czystość kodu. Wykorzystanie technologii React będzie dodatkowym atutem.Podczas  tworzenia  strony  należy  wykorzystać  system  kontroli  wersji  GIT  i  publiczne repozytorium w serwisie GitHub lub GitLab.
+W zadaniu oprócz estetyki i animacji, będzie oceniane również wykorzystanie możliwości jakie dają JS i CSS oraz czystość kodu. Wykorzystanie technologii React będzie dodatkowym atutem. 
+
+Podczas  tworzenia  strony  należy  wykorzystać  system  kontroli  wersji  GIT  i  publiczne repozytorium w serwisie GitHub lub GitLab.
 
 
 Niestety, nie udało mi się zaimplementować machanizmu sprawdzającego czy osoba nie jest botem. Mimo tego, dostałem się na praktyki, podczas których poznałem m.in.:
