@@ -21,10 +21,10 @@ Na stronie mile widziane będą zdjęcia oraz osadzony film z serwisu Youtube lu
 
 W zadaniu oprócz estetyki i animacji, będzie oceniane również wykorzystanie możliwości jakie dają JS i CSS oraz czystość kodu. Wykorzystanie technologii React będzie dodatkowym atutem. 
 
-Podczas  tworzenia  strony  należy  wykorzystać  system  kontroli  wersji  GIT  i  publiczne repozytorium w serwisie GitHub lub GitLab.
+Podczas  tworzenia  strony  należy  wykorzystać  system  kontroli  wersji  Git  i  publiczne repozytorium w serwisie GitHub lub GitLab.
 
 
-Niestety, nie udało mi się zaimplementować machanizmu sprawdzającego czy osoba nie jest botem. Mimo tego, dostałem się na praktyki, podczas których poznałem m.in.:
+Niestety, nie udało mi się zaimplementować machanizmu sprawdzającego czy osoba nie jest botem. Mimo tego, dostałem się na praktyki, podczas których zobaczyłem jak wygląda praca front-end developera oraz poznałem takie technologie i narzędzia jak:
 - TypeScript,
 - React.js,
 - Redux,
