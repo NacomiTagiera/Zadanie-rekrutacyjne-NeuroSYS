@@ -36,3 +36,5 @@ Niestety, nie udało mi się zaimplementować mechanizmu sprawdzającego czy oso
 - React Query,
 - GIT, GitLab,
 - Postman.
+
+O projekcie, nad którym pracowałem podczas praktyk można przeczytać na [https://neurosys.com/blog/telemetric-system](https://neurosys.com/blog/telemetric-system)
